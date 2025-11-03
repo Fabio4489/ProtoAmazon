@@ -1,0 +1,35 @@
+nav{
+    width: 100%;
+    background-color: #131921;
+    align-items: center;
+    display: flex;
+    border-radius: 0 0 19px 19px;
+    border-bottom: solid 2px #131921;
+}
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+}
+.dx{
+    width: 92%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: end;
+}
+li{
+    margin: 10px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: wheat;
+}
+/* button{
+    background-color: #febd69;
+} */
+.container{
+    margin: 20px;
+}

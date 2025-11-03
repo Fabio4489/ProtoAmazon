@@ -1,0 +1,15 @@
+<h2>Tutti i prodotti:</h2>
+<div class="container">    
+    <div class="prodotti" *ngFor="let prodotto of elenco">
+        <img class="foto" [src]="prodotto.imageUrl" [alt]="prodotto.name">
+        <p class="nome">{{prodotto.name}}</p>
+        <p class="prezzo"><b>{{prodotto.price}}$</b></p>
+        <!--
+            {{prodotto.id}}
+        <p>{{prodotto.description}}</p>
+        <p>{{prodotto.category}}</p>
+        <p>{{prodotto.inStock}}</p>
+        <p>{{prodotto.rating}}</p>
+        <br> -->
+    </div>
+</div>

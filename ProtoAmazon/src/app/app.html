@@ -1,0 +1,14 @@
+<nav>
+  <img src="logo.png" alt="logo"/>
+  <div class="dx">
+    <li>
+      <a [routerLink]="['/prodotti']" routerLinkActive="active">Elenco prodotti</a>
+    </li>
+    <li>
+      <a [routerLink]="['/carrello']" routerLinkActive="active">Carrello</a>
+    </li>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
