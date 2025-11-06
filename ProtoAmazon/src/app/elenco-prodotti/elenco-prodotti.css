@@ -1,13 +1,60 @@
 .container{
+    grid-template-columns: repeat(8, 1fr);
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%; 
+    gap:0px;
+    background-color: white;
+    /* flex-direction: column; */
+}
+.prodotti{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px gray solid;
+    border-right: 1px gray solid;
+    justify-content: center;
+    padding: 20px;
+}
+.foto-container{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.foto{
+    height: 100%;
+    width: 100%;
+}
+p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+select{
+    width: 25%;
+    margin-bottom: 25px;
+}
+.aggiungi-al-carrello{
+    background-color: rgb(255, 216, 20);
+    border-radius: 25px;
+    height: 35px;
+    border: none;
+}
+.aggiungi-al-carrello:hover{
+    background-color: rgba(255, 216, 20, 0.616);
+    color: black;
+}
+.aggiungi-al-carrello:active{
+    
+}
+/* dysplay grid
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px; 
     justify-content: center;
     align-content: center;
 }
 .prodotti{
     background-color: white;
-    /* rgb(167, 117, 42); */
-    /* border-radius: 30px; */
+
     border: solid lightgray 1px;
     color: black;
     display: flex;
@@ -26,27 +73,29 @@ img{
 .prezzo{
     font-size: 14px;
 }
-
-@media(max-width:800px){
+.aggiungi-al-carrello{
+    
+}
+@media(max-width:1100px){
     .container{
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 200px 200px 200px 200px;
         justify-content: center;
         align-content: center;
     }
 }
-@media(max-width:600px){
+@media(max-width:900px){
     .container{
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 200px 200px 200px;
         justify-content: center;
         align-content: center;
     }
 }
-@media(max-width:450px){
+@media(max-width:700px){
     .container{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 200px 200px;
         justify-content: center;
         align-content: center;
     }
@@ -58,4 +107,4 @@ img{
         justify-content: center;
         align-content: center;
     }
-}
+} */

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Prodotto } from '../models/prodotto';
 import { CommonModule } from '@angular/common';
+import { Ordine } from '../models/ordine';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-elenco-prodotti',
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './elenco-prodotti.html',
   styleUrl: './elenco-prodotti.css',
 })
@@ -193,5 +195,12 @@ export class ElencoProdotti {
       inStock: 120,
       rating: 4.2
     }
-  ]
+  ];
+  id: Number | undefined;
+  // quantita: number | undefined;
+
+  salva(): void {
+    let ord = new Ordine(this.id);
+    console.log(ord);
+  }
 }

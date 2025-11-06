@@ -1,15 +1,29 @@
 <h2>Tutti i prodotti:</h2>
 <div class="container">    
     <div class="prodotti" *ngFor="let prodotto of elenco">
-        <img class="foto" [src]="prodotto.imageUrl" [alt]="prodotto.name">
+        <div class="foto-container">
+            <img class="foto" [src]="prodotto.imageUrl" [alt]="prodotto.name">
+        </div>
         <p class="nome">{{prodotto.name}}</p>
         <p class="prezzo"><b>{{prodotto.price}}$</b></p>
+        <!-- <select value="inStock" [(ngModel)]="quantita">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+        </select> -->
+        <button class="aggiungi-al-carrello" (click)="salva()">Aggiungi al carrello</button>
         <!--
-            {{prodotto.id}}
+        <p>{{prodotto.rating}}</p>
+        {{prodotto.id}}
         <p>{{prodotto.description}}</p>
         <p>{{prodotto.category}}</p>
-        <p>{{prodotto.inStock}}</p>
-        <p>{{prodotto.rating}}</p>
         <br> -->
     </div>
 </div>
